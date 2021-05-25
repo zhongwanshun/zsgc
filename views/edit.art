@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>修改数据</title>
+</head>
+<style>
+    .top {
+        /* background-color: red; */
+        text-align: center;
+        border: 1px solid red;
+        width: 359px;
+        margin-left: 500px;
+        height: 550px;
+    }
+    
+    .top input {
+        width: 200px;
+        height: 29px;
+    }
+</style>
+
+<body class="top">
+    <div>
+        <div style="text-align: center; font-weight: 800;">修改信息</div>
+        <form action="/edit" method="post">
+            <p>序号：</p> <input type="text" name="id" value="{{id}}" class="id">
+            <p>姓名：</p> <input type="text" name="name" value="{{name}}" class="name">
+            <p>密码：</p> <input type="text" name="password" value="{{password}}" class="password">
+            <p>简介：</p> <input type="text" name="description" value="{{description}}" class="desction">
+            <p>邮箱号：</p><input type="text" name="email" value="{{email}}" class="email">
+            <br>
+            <input type="submit" value="确认" style="margin-left: 6px;width: 70px;height: 36px;border-radius: 10px;margin-top: 19px;">
+            <input type="submit" value="取消" style="margin-left: 79px; width: 70px;height: 36px; border-radius: 10px; margin-top: 14px;">
+        </form>
+    </div>
+</body>
+
+</html>

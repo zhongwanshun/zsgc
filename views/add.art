@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加数据</title>
+    <link rel="stylesheet" type="text/css" href="/www/stylesheets/add.css">
+</head>
+
+
+<body>
+    <div class="top">
+        <div style="text-align: center; font-size: 20px; font-weight: 800;">添加用户信息</div>
+        <form action="/add" method="post">
+            <p>姓名：</p><input type="text" name="name" class="name">
+            <p>密码：</p><input type="text" name="password" class="password"> <br>
+            <p>简介：</p><input type="text" name="description" class="desction"> <br>
+            <p>邮箱号：</p><input type="text" name="email" class="email"><br>
+            <br>
+            <input type="submit" value="确认" style="margin-left:79px;width: 77px;height: 42px;border-radius: 10px;">
+            <input type="submit" value="取消" style="margin-left:72px;width: 77px;height: 42px;border-radius: 10px;">
+        </form>
+    </div>
+
+</body>
+
+</html>

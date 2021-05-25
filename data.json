@@ -1,0 +1,36 @@
+[{
+        "id": "1",
+        "name": "钟万顺",
+        "password": "1234",
+        "description": "我是B200602班的",
+        "email": "1575662086@qq.com"
+    },
+    {
+        "id": "2",
+        "name": "高宇锦",
+        "password": "123456",
+        "description": "我是B200602班的",
+        "email": "1575664086@qq.com"
+    },
+    {
+        "id": "3",
+        "name": "余维鹏",
+        "password": "1234567",
+        "description": "我是B200602班的",
+        "email": "1575662086@qq.com"
+    },
+    {
+        "id": "4",
+        "name": "曹子强",
+        "password": "123489",
+        "description": "我是B200602班的",
+        "email": "1575662086@qq.com"
+    },
+    {
+        "id": "5",
+        "name": "杨有福",
+        "password": "1234",
+        "description": "我是B200602班的",
+        "email": "1575662086@qq.com"
+    }
+]

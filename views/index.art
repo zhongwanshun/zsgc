@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>后台数据管理系统</title>
+    <link rel="stylesheet" type="text/css" href="/www/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="title">用户信息</div>
+    <div style="text-align: center; background-color: azure; "><a href="/toAdd" style="text-decoration: none;font-size: medium;">添加用户</a>
+        <div>
+            <form action="/tosearch" method="GET">
+                <input type="search" name="kewword" placeholder="请输入查询的内容" id="" style="width: 200px;height: 35px;margin-top: 5px;margin-bottom: 5px;border: groove;border-radius: 5px;">
+                <button type="submit" style="width: 50px;height: 35px;margin-top: 5px;margin-bottom: 5px;border: groove;border-radius: 5px;">查询</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <table cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>用户名称</th>
+                    <th>密码</th>
+                    <th>简介</th>
+                    <th>邮箱</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{each list}}
+                <tr>
+                    <td>{{$value.id}}</td>
+                    <td>{{$value.name}}</td>
+                    <td>{{$value.password}}</td>
+                    <td>{{$value.description}}</td>
+                    <td>{{$value.email}}</td>
+                    <td><a href="/toEdit?id={{$value.id}}">修改</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/delete?id={{$value.id}}">删除</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
