@@ -12,7 +12,7 @@
     <div class="top">
         <div style="text-align: center; font-size: 20px; font-weight: 800;">添加用户信息</div>
         <form action="/add" method="post">
-            <p>姓名：</p><input type="text" name="name" class="name">
+            <p>姓名：</p><input type="text" name="username" class="name">
             <p>密码：</p><input type="text" name="password" class="password"> <br>
             <p>简介：</p><input type="text" name="description" class="desction"> <br>
             <p>邮箱号：</p><input type="text" name="email" class="email"><br>

@@ -26,7 +26,7 @@
         <div style="text-align: center; font-weight: 800;">修改信息</div>
         <form action="/edit" method="post">
             <p>序号：</p> <input type="text" name="id" value="{{id}}" class="id">
-            <p>姓名：</p> <input type="text" name="name" value="{{name}}" class="name">
+            <p>姓名：</p> <input type="text" name="username" value="{{username}}" class="name">
             <p>密码：</p> <input type="text" name="password" value="{{password}}" class="password">
             <p>简介：</p> <input type="text" name="description" value="{{description}}" class="desction">
             <p>邮箱号：</p><input type="text" name="email" value="{{email}}" class="email">

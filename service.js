@@ -64,8 +64,8 @@ exports.toEdit = (req, res) => {
     // 编辑更新数据
 exports.edit = (req, res) => {
         let info = req.body;
-        let sql = 'update user set name=?,password=?,description=?,email=? where id=?';
-        let data = [info.name, info.password, info.description, info.email, info.id];
+        let sql = 'update user set username=?,password=?,description=?,email=? where id=?';
+        let data = [info.username, info.password, info.description, info.email, info.id];
         db.base(sql, data, (result) => {
             if (result.affectedRows == 1) {
                 res.redirect('/');
@@ -84,12 +84,13 @@ exports.delete = (req, res) => {
     });
 }
 exports.tosearch = (req, res) => {
-    let all = req;
-    let sql = 'select * from user where name=?  or password=?  or description=?  or email=?'
-    let data = [all.name, all.password, all.description, all.email];
+    let username = req.query.keyword;
+    let sql = 'select * from user where username=?'
+    let data = [username];
     db.base(sql, data, (result) => {
-        if (result > 0) {
-
+        if (data[0] == username) {
+            res.render('search')
+            res.end();
         }
     })
 }
