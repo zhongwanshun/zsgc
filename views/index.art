@@ -11,8 +11,8 @@
     <div class="title">用户信息</div>
     <div style="text-align: center; background-color: azure; "><a href="/toAdd" style="text-decoration: none;font-size: medium;">添加用户</a>
         <div>
-            <form action="/tosearch" method="GET">
-                <input type="search" name="keyword" placeholder="请输入查询的内容" id="" style="width: 200px;height: 35px;margin-top: 5px;margin-bottom: 5px;border: groove;border-radius: 5px;">
+            <form action="/" method="POST">
+                <input type="title" name="username" placeholder="请输入查询的内容" id="" style="width: 200px;height: 35px;margin-top: 5px;margin-bottom: 5px;border: groove;border-radius: 5px;">
                 <button type="submit" style="width: 50px;height: 35px;margin-top: 5px;margin-bottom: 5px;border: groove;border-radius: 5px;">查询</button>
             </form>
         </div>

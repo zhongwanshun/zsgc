@@ -19,9 +19,8 @@ router.get('/toEdit', service.toEdit);
 router.post('/edit', service.edit);
 // 删除信息
 router.get('/delete', service.delete);
-
 //查询信息
-router.get('/tosearch', service.tosearch);
+router.post('/', service.tosearch);
 
 
 module.exports = router;

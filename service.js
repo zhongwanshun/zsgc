@@ -84,13 +84,7 @@ exports.delete = (req, res) => {
     });
 }
 exports.tosearch = (req, res) => {
-    let username = req.query.keyword;
-    let sql = 'select * from user where username=?'
-    let data = [username];
-    db.base(sql, data, (result) => {
-        if (data[0] == username) {
-            res.render('search')
-            res.end();
-        }
-    })
+    db.base("select * from user where username=?", [req.body.username], (results) => {
+        res.render('index', results[0])
+    });
 }
