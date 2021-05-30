@@ -85,6 +85,6 @@ exports.delete = (req, res) => {
 }
 exports.tosearch = (req, res) => {
     db.base("select * from user where username=?", [req.body.username], (results) => {
-        res.render('index', results[0])
+        res.render('index', { data: results[0] })
     });
 }
